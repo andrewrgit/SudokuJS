@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Asar' rel='stylesheet'>
+
+    
+</head>
+<body>
+
+    
+<div class="mainContainer">
+    <h1>Sudoku</h1>
+    <table class="grid" id="grid">
+        <tbody>
+        <tr>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="3 right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="6 right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr class="bottom_border">
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td ><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr class="bottom_border">
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td ><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td><input type="text" maxlength="1" /></td>
+            <td class="right_border"><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+            <td ><input type="text" maxlength="1" /></td>
+        </tr>
+    
+    
+        </tbody>
+    </table>
+
+    <button class="generateBtn" id="generateBtn" onclick="generateSudoku();">Generate New Puzzle</button>
+    <button class="checkBtn" id="checkBtn" onclick="checkSudoku();">Check</button>
+</div>
+
+
+
+
+<script src="sudoku.js"></script>
+</body>
+</html>
